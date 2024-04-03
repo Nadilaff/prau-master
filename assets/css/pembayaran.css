@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,500;1,700&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --navbar-color: #128C7E;
+    --yellow-color: #FDBF60;
+    --dasar-color: #D0E8E5;
+    --button-color: #076461;
+}
+
+.container-personil {
+    margin-bottom: 13rem;
+    padding: 2rem;
+}
+
+.konfirmasi {
+    background-color: var(--dasar-color);
+    width: 70%;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.hero-pembayaran {
+    width: 70%;
+    margin-top: -240px;
+    transform: translateX(25%);
+}
+
+.tittle {
+    font-weight: bold;
+}
+
+.text-konfirmasi {
+    font-size: 12px;
+}
+
+.btn {
+    color: var(--white-color);
+    width: 6rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.95);
+    padding-bottom: 10px;
+}
+
+.btn-status {
+    background-color: var(--button-color);
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+
+.container-wave {
+    margin-bottom: -50px;
+}
+
+.popup {
+    width: 260px;
+    background-color: var(--dasar-color);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+    text-align: center;
+    opacity: 0;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.open-popup {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+    width: 100px;
+}
+
+.popup h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5%;
+}
+
+.popup p {
+    font-size: 12px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.hero-pesan {
+    background-color: var(--navbar-color);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 15px;
+}
+
+.popup button {
+    color: var(--white-color);
+    width: max-content;
+    font-size: 12px;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.95);
+    padding-top: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-pesan {
+    background-color: var(--navbar-color);
+}

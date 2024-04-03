@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/riwayat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="container-navbar p-4">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand me-auto">PuncakPendaki</a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">PuncakPendaki</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" aria-current="page" href="index.html">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="profilGunung.html">Profil Gunung</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Jalur
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="patakBanteng.html">Patak Banteng</a></li>
+                                    <li><a class="dropdown-item" href="dwarawati.html">Dwarawati</a></li>
+                                    <li><a class="dropdown-item" href="dieng.html">Dieng</a></li>
+                                    <li><a class="dropdown-item" href="igirmranak.html">Igirmranak</a></li>
+                                    <li><a class="dropdown-item" href="kalilembu.html">Kalilembu</a></li>
+                                    <li><a class="dropdown-item" href="wates.html">Wates</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="cuaca.html">Cuaca</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="booking.html">Booking Online</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="login.html" class="login-button">Masuk</a>
+                <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <!--END NAVBAR-->
+
+
+    <!-- CONTENT RIWAYAT PENDAFTARAN -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="tittle-status mt-4">
+                <h5>Riwayat Pendaftaran</h5>
+                <hr class="garis-bawah">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-5">
+        <div class="container">
+            <div class="container-tabel d-flex justify-content-center align-items-center py-5 px-3 my-3">
+                <form class="row g-3 d-flex col-lg-8 justify-content-center align-items-center">
+                    <div class="col-12">
+                        <h1 class="tittle-pendaftaran text-center my-1">Personil Kelompok</h1>
+                    </div>
+                    <div class="col-12 container-tabel">
+                        <label for="inputName" class="form-label">Nama</label>
+                        <div class="col-12 isi-tabel">Nadila Dwi Farida R</div>
+                    </div>
+                    <div class="col-12 justify-content-center container-tabel">
+                        <label for="inputPosisi" class="form-label">Posisi</label>
+                        <div class="container d-flex isi-tabel">
+                            <div class="column col-6">Ketua</div>
+                            <div class="column col-6 icon-container justify-content-end align-items-center d-flex">
+                                <i class="fa-solid fa-chevron-up fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 container-tabel">
+                        <label for="exampleFormControlTextarea1" class="form-label">Alamat</label>
+                        <div class="col-12 isi-tabel">Jl. Dr. Cipto No. 12, Semarang Timur</div>
+                    </div>
+                    <div class="col-md-6 container-tabel">
+                        <label for="inputTempatLahir" class="form-label">Tempat Lahir</label>
+                        <div class="col-12 isi-tabel">Semarang</div>
+                    </div>
+                    <div class="col-md-6 container-tabel">
+                        <label for="inputTanggalLahir" class="form-label">Tanggal lahir</label>
+                        <div class="col-12 isi-tabel">24/03/2024</div>
+                    </div>
+                    <div class="col-6 container-tabel">
+                        <label for="inputGender" class="form-label">Jenis kelamin</label>
+                        <div class="container d-flex isi-tabel">
+                            <div class="column col-6">Perempuan</div>
+                            <div class="column col-6 icon-container justify-content-end align-items-center d-flex">
+                                <i class="fa-solid fa-chevron-up fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 container-tabel">
+                        <label for="inputNoHp" class="form-label">No. HP</label>
+                        <div class="col-12 isi-tabel">085123456789</div>
+                    </div>
+                    <div class="col-12 container-tabel">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <div class="col-12 isi-tabel">nadila@gmail.com</div>
+                    </div>
+                    <div class="col-6 container-tabel">
+                        <label for="inputIdentitas" class="form-label">Jenis identitas</label>
+                        <div class="container d-flex isi-tabel">
+                            <div class="column col-6">KTP</div>
+                            <div class="column col-6 icon-container justify-content-end align-items-center d-flex">
+                                <i class="fa-solid fa-chevron-up fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 container-tabel">
+                        <label for="inputKendaraan" class="form-label">Jumlah motor</label>
+                        <div class="col-12 isi-tabel">2</div>
+                    </div>
+                    <div class="col-12 container-tabel">
+                        <label class="form-label fs-6">Unggah Kartu Identitas</label>
+                        <div class="col-12 isi-tabel">
+                            <img src="./assets/images/ktp.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 container-tabel">
+                        <label for="inputNoKeluarga" class="form-label">No. Hp keluarga</label>
+                        <div class="col-12 isi-tabel">089123456789</div>
+                    </div>
+                    <div class="col-md-6 container-tabel">
+                        <label for="inputNamaKeluarga" class="form-label">Nama Keluarga</label>
+                        <div class="col-12 isi-tabel">Nadila</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-tabel d-flex justify-content-center align-items-center py-5 px-3 my-5">
+                <form class="row g-3 d-flex col-lg-8 justify-content-center align-items-center">
+                    <div class="col-12">
+                        <h1 class="tittle-pendaftaran text-center my-1">Personil Kelompok</h1>
+                    </div>
+                    <div class="col-12 container-tabel">
+                        <label for="inputName" class="form-label">Nama</label>
+                        <div class="col-12 isi-tabel">Nadila Dwi Farida R</div>
+                    </div>
+                    <div class="col-12 justify-content-center container-tabel">
+                        <label for="inputPosisi" class="form-label">Posisi</label>
+                        <div class="container d-flex isi-tabel">
+                            <div class="column col-6">Ketua</div>
+                            <div class="column col-6 icon-container justify-content-end align-items-center d-flex">
+                                <i class="fa-solid fa-chevron-up fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 container-tabel">
+                        <label for="exampleFormControlTextarea1" class="form-label">Alamat</label>
+                        <div class="col-12 isi-tabel">Jl. Dr. Cipto No. 12, Semarang Timur</div>
+                    </div>
+                    <div class="col-md-6 container-tabel">
+                        <label for="inputTempatLahir" class="form-label">Tempat Lahir</label>
+                        <div class="col-12 isi-tabel">Semarang</div>
+                    </div>
+                    <div class="col-md-6 container-tabel">
+                        <label for="inputTanggalLahir" class="form-label">Tanggal lahir</label>
+                        <div class="col-12 isi-tabel">24/03/2024</div>
+                    </div>
+                    <div class="col-6 container-tabel">
+                        <label for="inputGender" class="form-label">Jenis kelamin</label>
+                        <div class="container d-flex isi-tabel">
+                            <div class="column col-6">Perempuan</div>
+                            <div class="column col-6 icon-container justify-content-end align-items-center d-flex">
+                                <i class="fa-solid fa-chevron-up fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 container-tabel">
+                        <label for="inputNoHp" class="form-label">No. HP</label>
+                        <div class="col-12 isi-tabel">085123456789</div>
+                    </div>
+                    <div class="col-12 container-tabel">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <div class="col-12 isi-tabel">nadila@gmail.com</div>
+                    </div>
+                    <div class="col-6 container-tabel">
+                        <label for="inputIdentitas" class="form-label">Jenis identitas</label>
+                        <div class="container d-flex isi-tabel">
+                            <div class="column col-6">KTP</div>
+                            <div class="column col-6 icon-container justify-content-end align-items-center d-flex">
+                                <i class="fa-solid fa-chevron-up fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 container-tabel">
+                        <label for="inputKendaraan" class="form-label">Jumlah motor</label>
+                        <div class="col-12 isi-tabel">2</div>
+                    </div>
+                    <div class="col-12 container-tabel">
+                        <label class="form-label fs-6">Unggah Kartu Identitas</label>
+                        <div class="col-12 isi-tabel">
+                            <img src="./assets/images/ktp.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 container-tabel">
+                        <label for="inputNoKeluarga" class="form-label">No. Hp keluarga</label>
+                        <div class="col-12 isi-tabel">089123456789</div>
+                    </div>
+                    <div class="col-md-6 container-tabel">
+                        <label for="inputNamaKeluarga" class="form-label">Nama Keluarga</label>
+                        <div class="col-12 isi-tabel">Nadila</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END CONTENT RIWAYAT PENDAFTARAN -->
+
+
+    
+
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container-fluid container-footer pt-4">
+            <div class="container">
+                <a class="navbar-brand me-auto"
+                    style="margin-right: auto; margin-left: auto; margin-bottom: 10px;">PuncakPendaki</a>
+                <div class="icons">
+                    <a href=" "><i class="fa-brands fa-instagram"></i></a>
+                    <a href=" "><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=" "><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=" "><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="footerNav">
+                    <p>
+                        Dapatkan informasi pendaftaran, perkiraan cuaca, syarat, dan persiapan pendakian gunung di
+                        Indonesia.
+                        Situs ini ditujukan untuk kita para pendaki. Dengan mendaftar, Anda memahami dan menyetujui jika
+                        data Anda
+                        akan dikumpulkan dan digunakan sesuai dengan kebijakan kami dan ketentuan penggunaan.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>All right reserved &copy;2024; Develop by <span class="designer">Nadila</span></p>
+        </div>
+    </footer>
+    <!-- END FOOTER-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

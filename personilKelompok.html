@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/personilKelompok.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="container-navbar p-4">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand me-auto">PuncakPendaki</a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">PuncakPendaki</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" aria-current="page" href="index.html">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="profilGunung.html">Profil Gunung</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Jalur
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="patakBanteng.html">Patak Banteng</a></li>
+                                    <li><a class="dropdown-item" href="dwarawati.html">Dwarawati</a></li>
+                                    <li><a class="dropdown-item" href="dieng.html">Dieng</a></li>
+                                    <li><a class="dropdown-item" href="igirmranak.html">Igirmranak</a></li>
+                                    <li><a class="dropdown-item" href="kalilembu.html">Kalilembu</a></li>
+                                    <li><a class="dropdown-item" href="wates.html">Wates</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="cuaca.html">Cuaca</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 active" href="booking.html">Booking Online</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="login.html" class="login-button">Masuk</a>
+                <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <!--END NAVBAR-->
+
+    <!--ALUR PENDAFTARAN IMAGE-->
+    <div class="container-fluid">
+        <div class="container-personil p-5">
+            <div class="row d-flex align-items-center justify-content-center text-center">
+                <div class="col-1">
+                    <img src="./assets/images/snk-aktif.png" alt="">
+                    <p class="header-text" style="font-size: 10px; font-weight: bold;">Syarat & ketentuan</p>
+                </div>
+                <div class="col-3">
+                    <img src="./assets/images/garis-patah.png" alt="">
+                </div>
+                <div class="col-1">
+                    <img src="./assets/images/kelompok-aktif.png" alt="">
+                    <p class="header-text" style="font-size: 10px; font-weight: bold;">Personil kelompok</p>
+                </div>
+                <div class="col-3">
+                    <img src="./assets/images/garis-patah.png" alt="">
+                </div>
+                <div class="col-1">
+                    <img src="./assets/images/sukses.png" alt="">
+                    <p class="header-text" style="font-size: 10px; font-weight: bold;">Pembayaran</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ALUR PENDAFTARAN IMAGE-->
+
+
+    <!-- CONTENT TABEL -->
+    <div class="container-fluid" style="margin-top: 1rem; margin-bottom: 10rem;">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-6">
+                    <p class="tittle-tabel">Data Personil Kelompok</p>
+                </div>
+                <div class="col-6 text-end">
+                    <button type="button" class="btn-tambah" onclick="window.location.href='formPendaftaran.html'">
+                        <i class="fas fa-plus"></i> Tambah Personil
+                    </button>
+                </div>
+            </div>
+            <div class="container-table d-flex justify-content-center align-items-center">
+                <div class="row col-12 table-responsive">
+                    <table class="table mt-4 table-custom table-hover">
+                        <thead>
+                            <tr class="head-tabel">
+                                <th scope="col-2">Nama Lengkap</th>
+                                <th scope="col-2">Tempat, tanggal lahir</th>
+                                <th scope="col-2">Jenis Kelamin</th>
+                                <th scope="col-2">No. Hp</th>
+                                <th scope="col-2">Posisi</th>
+                                <th scope="col-2">Aksi</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END CONTENT TABEL -->
+
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container-fluid container-footer pt-4">
+            <div class="container">
+                <a class="navbar-brand me-auto"
+                    style="margin-right: auto; margin-left: auto; margin-bottom: 10px;">PuncakPendaki</a>
+                <div class="icons">
+                    <a href=" "><i class="fa-brands fa-instagram"></i></a>
+                    <a href=" "><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=" "><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=" "><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="footerNav">
+                    <p>
+                        Dapatkan informasi pendaftaran, perkiraan cuaca, syarat, dan persiapan pendakian gunung di
+                        Indonesia.
+                        Situs ini ditujukan untuk kita para pendaki. Dengan mendaftar, Anda memahami dan menyetujui jika
+                        data Anda
+                        akan dikumpulkan dan digunakan sesuai dengan kebijakan kami dan ketentuan penggunaan.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>All right reserved &copy;2024; Develop by <span class="designer">Nadila</span></p>
+        </div>
+    </footer>
+    <!-- END FOOTER-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

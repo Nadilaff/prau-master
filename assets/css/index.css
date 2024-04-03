@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,500;1,700&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --navbar-color: #128C7E;
+    --yellow-color: #FDBF60;
+    --dasar-color: #D0E8E5;
+    --button-color: #076461;
+}
+
+
+/** HERO BERANDA **/
+.hero-beranda {
+    background: url(../images/BgBeranda.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero-beranda::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-beranda .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-beranda h1 {
+    font-size: 32px;
+    color: var(--yellow-color);
+}
+
+.hero-beranda p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn-booking {
+    background-color: var(--navbar-color);
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    width: 170px;
+    height: 42px;
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+}
+
+.btn-booking:hover {
+    background-color: var(--button-color);
+    box-shadow: none;
+}
+
+/** END HERO BERANDA **/
+
+
+/** CAROUSEL BERANDA **/
+.carousel-container {
+    margin-top: -100px;
+}
+
+.img-wrapper {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (min-width:576px) {
+    .carousel-inner {
+        display: flex;
+    }
+
+    .carousel-item {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3);
+    }
+
+    .img-wrapper {
+        height: 15vw;
+    }
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.card {
+    margin: 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    min-height: 186px;
+}
+
+.card-body {
+    background-color: var(--dasar-color);
+    min-height: 160px;
+}
+
+.card-body h5 {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.card-body p {
+    margin-top: 2px;
+    text-align: justify;
+    font-size: 12px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: var(--button-color);
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card-link {
+    color: var(--button-color);
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration-line: underline;
+    text-decoration-color: var(--button-color);
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        min-height: 240px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .carousel-inner {
+        display: flex;
+    }
+
+    .carousel-item {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3);
+    }
+
+    .img-wrapper {
+        height: 15vw;
+    }
+
+    .card-body {
+        min-height: 240px;
+    }
+}
+
+/** END CAROUSEL BERANDA **/
+
+
+/** CARD BERANDA **/
+.artikel-beranda p {
+    font-size: 16px;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.hero-puncakpendaki img {
+    width: 200px;
+    height: 300px;
+}
+
+@media (max-width: 576px) {
+    .hero-puncakpendaki {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .artikel-beranda h1 {
+        font-size: 25px;
+    }
+}
+
+/** END CARD BERANDA **/
+
+
+/** SERVICE **/
+.service {
+    padding-bottom: 35px;
+    font-size: 32px
+}
+
+@media (max-width: 992px) {
+    .icons-service {
+        padding: 10px;
+    }
+
+    .icons-service:nth-child(5) {
+        display: none;
+    }
+
+    .icons-service img {
+        width: 80px;
+        height: auto;
+    }
+
+    .icons-service h3 {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .icons-service:nth-child(5) {
+        display: none;
+    }
+}
+
+.icons-service img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.icons-service h3 {
+    font-size: 20px;
+}
+
+.icons-service p {
+    font-size: 12px;
+}
+
+@media (max-width: 576px) {
+    .service {
+        padding-bottom: 20px;
+    }
+
+    .icons-service {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .icons-service img {
+        width: 60px;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .icons-service h3 {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+    .icons-service p {
+        font-size: 12px;
+    }
+
+    .icons-service:nth-child(5) {
+        display: none;
+    }
+}
+
+/** END SERVICE **/
+
+
+/** PROFIL GUNUNG **/
+.container-profil {
+    background-color: var(--dasar-color);
+    height: max-content;
+}
+
+.kotak-profil {
+    height: 400px;
+}
+
+.mountain-container {
+    position: relative;
+}
+
+.rectangle1 {
+    position: absolute;
+    height: 330px;
+    width: 560px;
+    background-color: var(--button-color);
+    top: 50px;
+    z-index: 0;
+}
+
+.rectangle2 {
+    position: absolute;
+    height: 330px;
+    width: 560px;
+    background-color: var(--navbar-color);
+    z-index: 0;
+    left: 50px;
+}
+
+.rectangle3 {
+    position: absolute;
+    height: 330px;
+    width: 560px;
+    z-index: 1;
+    left: 30px;
+    top: 28px;
+    overflow: hidden;
+    border-radius: 20px 0 20px 0;
+}
+
+
+
+.mountain-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.text-profil p {
+    text-align: justify;
+}
+/** END PROFIL GUNUNG **/
+
+
+/** ULASAN APLIKASI **/
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+}
+
+.slide-content {
+    margin: 0 40px;
+}
+
+.card-ulasan {
+    width: 320px;
+    border-radius: 25px;
+    background-color: var(--navbar-color);
+}
+
+.card-ulasan-content {
+    padding-top: 14px;
+    }
+
+.card-content-container {
+    padding: 13px 14px;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: var(--white-color);
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--navbar-color);
+}
+
+.username {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.tgl-ulas {
+    color: var(--white-color);
+    font-size: 12px;
+}
+
+.description {
+    color: var(--white-color);
+    font-size: 16px;
+}
+/** END ULASAN APLIKASI **/
+
+
+/** BASECAMP **/
+.container-basecamp {
+    background-image: url(../images/bg_basecamp.png);
+    margin-top: 50px;
+}
+
+.basecamp {
+    padding-bottom: 50px;
+    color: var(--white-color);
+}
+
+.text-bc {
+    color: var(--white-color);
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .logo-basecamp {
+        height: 40%;
+        width: 40%;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-basecamp {
+        height: auto;
+        width: 50%;
+    }
+}
+
+/** END BASECAMP **/

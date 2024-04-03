@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,500;1,700&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --navbar-color: #128C7E;
+    --yellow-color: #FDBF60;
+    --dasar-color: #D0E8E5;
+    --button-color: #076461;
+}
+
+
+/* TITTLE STATUS PENDAFTARAN */
+.garis-bawah {
+    border: none;
+    border-bottom: 1.5px solid var(--black-color);
+    width: 100%;
+    margin-top: 0;
+}
+
+/* END TITTLE STATUS PENDAFTARAN */
+
+
+/* NAVBAR STATUS PENDAFTARAN */
+.navbar-status ul {
+    background-color: var(--navbar-color);
+}
+
+.nav-link {
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: normal;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--yellow-color) !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: var(--navbar-color);
+}
+
+/* END NAVBAR STATUS PENDAFTARAN */
+
+
+/* CONTENT TABLE */
+
+.tittle-tabel {
+    color: var(--navbar-color);
+}
+
+.table-custom {
+    --bs-table-font-size: 12px;
+}
+
+.table-custom thead {
+    --bs-table-color: white;
+    --bs-table-bg: #076461;
+}
+
+.table-custom tbody {
+    --bs-table-color: black;
+    --bs-table-bg: #D0E8E5;
+
+}
+
+.table {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.btn {
+    background-color: var(--navbar-color);
+    color: #FFFFFF;
+    font-size: 14px;
+    border: none;
+    width: max-content;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    background-color: var(--button-color);
+    box-shadow: none;
+    color: var(--white-color);
+}
+
+.table>:not(caption)>*>* {
+    padding: 1rem .5rem;
+}
+/* END CONTENT TABLE */
+
+
+/* RIWAYAT PENDAFTARAN */
+.container-tabel {
+    background-color: var(--dasar-color);
+    border-radius: 10px;
+}
+
+.container-tabel label {
+    font-weight: bold;
+}
+
+.isi-tabel {
+    background-color: var(--white-color);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.tittle-pendaftaran {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* END RIWAYAT PENDAFTARAN */
+
+/* Popup ulasan web */
+.btn-tagline {
+    border: 1px solid var(--button-color);
+    margin-left: 8px;
+    border-radius: 25px;
+    width: max-content;
+    padding: 7px;
+    margin-top: 10px;
+}
+
+.btn-ulas>.btn-ulas:not(:first-child),
+.ulas>.btn:not(:first-child) {
+    margin-left: 10px;
+}
+
+.btn-check:active+.btn-outline-primary,
+.btn-check:checked+.btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active {
+    color: #076461;
+    background-color: #D0E8E5;
+    border: none;
+    border-radius: 25px;
+}
+
+.btn-ulas>.btn-ulas:not(:last-child)>.btn,
+.btn-ulas>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.btn-outline-primary {
+    color: #076461;
+    border-color: #076461;
+    border-radius: 25px;
+    font-size: .75rem;
+}
+
+.btn-ulas>.btn-ulas:not(:last-child)>.btn,
+.btn-ulas>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.btn-ulas>.btn-ulas:not(:first-child)>.btn,
+.btn-ulas>.btn:nth-child(n+3),
+.btn-ulas>:not(.btn-check)+.btn {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.modal-body textarea {
+    transform: translateX(3%);
+}

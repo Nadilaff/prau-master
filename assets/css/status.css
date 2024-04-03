@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,500;1,700&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --navbar-color: #128C7E;
+    --yellow-color: #FDBF60;
+    --dasar-color: #D0E8E5;
+    --button-color: #076461;
+}
+
+/* TITTLE STATUS PENDAFTARAN */
+.garis-bawah {
+    border: none;
+    border-bottom: 1.5px solid var(--black-color);
+    width: 100%;
+    margin-top: 0;
+}
+/* END TITTLE STATUS PENDAFTARAN */
+
+
+/* NAVBAR STATUS PENDAFTARAN */
+.navbar-status ul {
+    background-color: var(--navbar-color);
+}
+
+.nav-link {
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: normal;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--yellow-color) !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: var(--navbar-color);
+}
+/* END NAVBAR STATUS PENDAFTARAN */
+
+
+/* BELUM ADA PENDAFTARAN */
+.container-content h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.container-content p {
+    font-size: 14px;
+}
+
+.pesan-img {
+    width: 400px;
+    transform: translateX(100%);
+}
+/* END BELUM ADA PENDAFTARAN */
+
+
+/* RIWAYAT PENDAFTARAN */
+.garis-bawah {
+    border: none;
+    height: 2px;
+    background-color: var(--black-color);
+}
+
+.table tbody {
+    font-size: 12px;
+}
+
+.table thead {
+    font-size: 14px;
+}
+
+.container-tabel {
+    background-color: var(--dasar-color);
+    border-radius: 10px;
+}
+
+.container-tabel label {
+    font-weight: bold;
+}
+
+.isi-tabel {
+    background-color: var(--white-color);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.tittle-pendaftaran {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* END RIWAYAT PENDAFTARAN */

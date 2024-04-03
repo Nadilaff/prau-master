@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,500;1,700&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --navbar-color: #128C7E;
+    --yellow-color: #FDBF60;
+    --dasar-color: #D0E8E5;
+    --button-color: #076461;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/** HEADER GUNUNG **/
+.header-gunung {
+    background-image: url('../images/BgGunung.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.header {
+    background-image: url('../images/BgGunung.png');
+    background-size: cover;
+    background-position: center;
+    height: 635PX;
+    color: #fff;
+    text-align: left;
+    padding-top: 100px;
+}
+
+.header-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+/** END HEADER GUNUNG **/

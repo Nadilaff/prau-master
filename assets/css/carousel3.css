@@ -1,0 +1,71 @@
+/*** Testimoni Page ***/
+.testimoni-title {
+    max-width: 600px;
+}
+
+.testimoni-title h3 {
+    font-weight: bold;
+    font-family: 'montserrat';
+    color: #D98BB0;
+}
+
+.testimoni-carousel {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    visibility: visible;
+}
+
+.testimoni-carousel .owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimoni-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: #DAC2CC;
+    border-radius: 2px;
+    transition: .5s;
+}
+
+.testimoni-carousel .owl-dot.active {
+    width: 30px;
+    background: #D98BB0;
+}
+
+.testimoni-carousel .owl-item.center {
+    position: relative;
+    z-index: 1;
+}
+
+.testimoni-carousel .owl-item .testimoni-item {
+    transition: .5s;
+}
+
+.testimoni-carousel .owl-item.center .testimoni-item {
+    background: #FFFFFF !important;
+    box-shadow: 0 0 30px #DDDDDD;
+}
+
+.testimoni-item {
+    background: #FBE2EC;
+}
+
+.rating {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.checked {
+    color: #E38B29;
+}
+
+/*** Testimoni Page END ***/

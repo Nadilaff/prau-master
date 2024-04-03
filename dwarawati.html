@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalur Dieng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/jalur.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="container-fluid container-navbar py-4">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand me-auto">PuncakPendaki</a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">PuncakPendaki</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" aria-current="page" href="index.html">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="profilGunung.html">Profil Gunung</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Jalur
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="patakBanteng.html">Patak Banteng</a></li>
+                                    <li><a class="dropdown-item" href="dwarawati.html">Dwarawati</a></li>
+                                    <li><a class="dropdown-item" href="dieng.html">Dieng</a></li>
+                                    <li><a class="dropdown-item" href="igirmranak.html">Igirmranak</a></li>
+                                    <li><a class="dropdown-item" href="kalilembu.html">Kalilembu</a></li>
+                                    <li><a class="dropdown-item" href="wates.html">Wates</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="cuaca.html">Cuaca</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="booking.html">Booking Online</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="login.html" class="login-button">Masuk</a>
+                <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <!--END NAVBAR-->
+
+
+    <!--HEADER-->
+    <div class="container-fluid jalur">
+        <div class="container box-jalur">
+            <div class="row align-items-center">
+                <div class="jalur-text col-lg-6 col-xl-6 col-12">
+                    <h1>Gunung Prau Via Dwarawati</h1>
+                    <p>
+                    Jalur ini terletak di Jl. Raya Wonosobo, Batur - Dieng Jl. Dieng Km. 26, Kec. Kejajar, Kabupaten Wonosobo, Jawa Tengah.
+                    Jalur ini dikenal juga sebagai jalur prau via Dieng Kulon. Pada awal pendakian, kamu akan melihat pemandangan hijaunya
+                    alam Dieng yang tampak memukau. Kamu bisa melihat pula persawahan di lereng-lereng pegunungan tampak cantik berselimut
+                    kabut. Sepanjang pendakian, kamu akan melalui jalur yang rata-rata merupakan tanah berundak. Jalur ini tergolong aman,
+                    namun kamu tetap perlu memerhatikan kondisi alas kaki agar tidak licin. Jalur penuh akar juga akan kamu temui ketika
+                    mendaki. Jalur ini dinamakan akar cinta. Usahakan untuk selalu memerhatikan langkah agar tak tersandung akar tersebut.
+                    Ketika melewati Pos 2, sesekali kamu bisa lihat pemandangan Gunung Sindoro dan Sumbing dari kejauhan. Pendaki akan
+                    sampai puncak dan mendirikan tenda di area camp Telaga Wurung dengan pemandangan awan menggumpal dan rumput hijau.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-12">
+                    <img src="./assets/images/dwarawati.png" alt="" class="bc-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END HEADER-->
+
+
+    <!--FASILITAS-->
+    <div class="container-fluid container-fasilitas">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 box-fasilitas">
+                    <h1 class="tittle-fasilitas text-center">Fasilitas Basecamp</h1>
+                </div>
+                <div class="col-6 offset-3">
+                    <p class="text-fasilitas text-center">
+                        Berikut adalah beberapa fasilitas yang disediakan oleh Basecamp untuk menunjang kenyamanan
+                        pengunjung
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <div class="row col-lg-6 baris-icon justify-content-md-center">
+                    <div class="col-lg-4 col-xl-4 col-md-3 col-sm-4 col-4 mt-5">
+                        <div class="logo-fasilitas">
+                            <img src="./assets/images/parkir.png" alt="">
+                            <p class="text-logo">Tempat Parkir</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-4 col-md-3 col-sm-4 col-4 mt-5">
+                        <div class="logo-fasilitas">
+                            <img src="./assets/images/musholla.png" alt="">
+                            <p class="text-logo">Musholla</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-4 col-md-3 col-sm-4 col-4 mt-5">
+                        <div class="logo-fasilitas">
+                            <img src="./assets/images/listrik.png" alt="">
+                            <p class="text-logo">Listrik</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-4 col-md-3 col-sm-4 col-4 mt-5">
+                        <div class="logo-fasilitas">
+                            <img src="./assets/images/shelter.png" alt="">
+                            <p class="text-logo">Shelter</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-4 col-md-3 col-sm-4 col-4 mt-5">
+                        <div class="logo-fasilitas">
+                            <img src="./assets/images/toilet.png" alt="">
+                            <p class="text-logo">Toilet</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-4 col-md-3 col-sm-4 col-4 mt-5">
+                        <div class="logo-fasilitas">
+                            <img src="./assets/images/warung.png" alt="">
+                            <p class="text-logo">Warung Makan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END FASILITAS-->
+
+
+    <!--PETA JALUR-->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="tittle-peta text-center">Peta Jalur Pendakian</h1>
+                </div>
+                <div class="col-6 offset-3">
+                    <p class="text-peta text-center">
+                        Download peta jalur pendakian sebelum mendaki agar dapat dilihat secara offline. Click gambar
+                        untuk mendownload.
+                    </p>
+                </div>
+            </div>
+            <img src="./assets/images/jalur dieng.png" alt="" class="jalur-img">
+        </div>
+    </div>
+    <!--END PETA JALUR-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn btn-download" id="download-btn">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./assets/images/jalur dieng.png" class="modal-img" alt="modal-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--GALERI-->
+    <div class="container-fluid container-galeri">
+        <div class="container">
+            <div class="row header-galeri text-center">
+                <div class="col-12">
+                    <h1>Galeri Pendaki</h1>
+                </div>
+                <div class="col-6 offset-3">
+                    <p>
+                        Jelajahi galeri dari petualangan seru di Gunung Merbabu. Dalam setiap gambar, temukan cerita
+                        kegigihan dan keindahan
+                        alam yang mengagumkan.
+                    </p>
+                </div>
+            </div>
+            <div class="row row-galeri">
+                <div class="column">
+                    <img src="./assets/images/1.jpg" alt="foto" class="foto-item">
+                    <img src="./assets/images/02.jpg" alt="foto" class="foto-item">
+                    <img src="./assets/images/3.jpg" alt="foto" class="foto-item">
+                    <img src="./assets/images/012.jpg" alt="foto" class="foto-item">
+                </div>
+                <div class="column">
+                    <img src="./assets/images/04.jpg" alt="foto" class="foto-item">
+                    <img src="./assets/images/5.jpg" alt="foto" class="foto-item">
+                    <img src="./assets/images/06.jpg" alt="foto" class="foto-item">
+                    <img src="./assets/images/7.jpg" alt="foto" class="foto-item">
+                </div>
+                <div class="column">
+                    <img src="./assets/images/8.jpg" alt="foto" class="foto-item">
+                    <img src="./assets/images/09.jpg" alt="foto" class="foto-item">
+                    <img src="./assets/images/10.jpg" alt="foto" class="foto-item">
+                    <img src="./assets/images/011.jpg" alt="foto" class="foto-item">
+                </div>
+                <div class="column">
+                    <img src="./assets/images/04.jpg" alt="foto" class="foto-item">
+                    <img src="./assets/images/5.jpg" alt="foto" class="foto-item">
+                    <img src="./assets/images/06.jpg" alt="foto" class="foto-item">
+                    <img src="./assets/images/7.jpg" alt="foto" class="foto-item">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END GALERI-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="galerifoto-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./assets/images/1.jpg" class="modal-foto" alt="modal foto">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--RATING-->
+    <div class="container-fluid">
+        <div class="container">
+            <h1 class="tittle-rating text-center">Ulasan Jalur Dwarawati</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-5 container-ulas">
+                    <a href="ulasan.html" class="btn btn-ulas text-center mb-3">Kirim Ulasan</a>
+                    <div class="ulas-body text-center">
+                        <h3 class="card-title">Ulasan Pendaki</h3>
+                        <h2 class="card-subtitle">5.4/5</h2>
+                        <h5 class="rating-start">★★★★★</h5>
+                        <p class="card-subtitle mb-4 text-muted">(300 reviews)</p>
+                        <div class="rating-info">
+                            <h7 class="rating-start text-center">★ <span class="angka-start">5</span></h7>
+                            <div class="rating-bar-container">
+                                <div class="rating-bar">
+                                    <div class="rating-fill-5"></div>
+                                </div>
+                                <span class="rating-label">200</span>
+                            </div>
+                        </div>
+                        <div class="rating-info">
+                            <h7 class="rating-start text-center">★ <span class="angka-start">4</span></h7>
+                            <div class="rating-bar-container">
+                                <div class="rating-bar">
+                                    <div class="rating-fill-4"></div>
+                                </div>
+                                <span class="rating-label">80</span>
+                            </div>
+                        </div>
+                        <div class="rating-info">
+                            <h7 class="rating-start text-center">★ <span class="angka-start">3</span></h7>
+                            <div class="rating-bar-container">
+                                <div class="rating-bar">
+                                    <div class="rating-fill-3"></div>
+                                </div>
+                                <span class="rating-label">20</span>
+                            </div>
+                        </div>
+                        <div class="rating-info">
+                            <h7 class="rating-start text-center">★ <span class="angka-start">2</span></h7>
+                            <div class="rating-bar-container">
+                                <div class="rating-bar">
+                                    <div class="rating-fill-2"></div>
+                                </div>
+                                <span class="rating-label">0</span>
+                            </div>
+                        </div>
+                        <div class="rating-info">
+                            <h7 class="rating-start text-center">★ <span class="angka-start">1</span></h7>
+                            <div class="rating-bar-container">
+                                <div class="rating-bar">
+                                    <div class="rating-fill-1"></div>
+                                </div>
+                                <span class="rating-label">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-7 container-review">
+                    <div class="review-body">
+                        <h4 class=" review-title mb-2">
+                            ★★★★★
+                            <span class="tagline">Jalur terlandai</span>
+                        </h4>
+                        <div class="profil-container mb-1">
+                            <img src="./assets/images/kucing.jpg" alt="" alt="Foto Profil" class="profile-picture">
+                            <span class="username">Nadila</span>
+                        </div>
+                        <p class="review-text">Selection image line ellipse arrange. Select vertical selection project
+                            union layer. Variant layout prototype device
+                            bold selection content library. Link flows overflow project move pen hand frame underline
+                            export. Ipsum device boolean
+                            undo plugin reesizing clip italic bold reesizing. Selection image line ellipse arrange.
+                            Select vertical selection project union layer. Variant layout prototype device
+                            bold selection content library. Link flows overflow project move pen hand frame underline
+                            export. Ipsum device boolean
+                            undo plugin reesizing clip italic bold reesizing.
+                        </p>
+                    </div>
+                    <div class="review-body">
+                        <h4 class=" review-title mb-2">
+                            ★★★★★
+                            <span class="tagline">Jalur terlandai</span>
+                        </h4>
+                        <div class="profil-container mb-1">
+                            <img src="./assets/images/kucing.jpg" alt="" alt="Foto Profil" class="profile-picture">
+                            <span class="username">Nadila</span>
+                        </div>
+                        <p class="review-text">Selection image line ellipse arrange. Select vertical selection project
+                            union layer. Variant
+                            layout prototype device
+                            bold selection content library. Link flows overflow project move pen hand frame underline
+                            export. Ipsum device
+                            boolean
+                            undo plugin reesizing clip italic bold reesizing. Selection image line ellipse arrange.
+                            Select vertical
+                            selection project union layer. Variant layout prototype device
+                            bold selection content library. Link flows overflow project move pen hand frame underline
+                            export. Ipsum device
+                            boolean
+                            undo plugin reesizing clip italic bold reesizing.
+                        </p>
+                    </div>
+                    <div class="review-body">
+                        <h4 class=" review-title mb-2">
+                            ★★★★★
+                            <span class="tagline">Jalur terlandai</span>
+                        </h4>
+                        <div class="profil-container mb-1">
+                            <img src="./assets/images/kucing.jpg" alt="" alt="Foto Profil" class="profile-picture">
+                            <span class="username">Nadila</span>
+                        </div>
+                        <p class="review-text">Selection image line ellipse arrange. Select vertical selection project
+                            union layer. Variant
+                            layout prototype device
+                            bold selection content library. Link flows overflow project move pen hand frame underline
+                            export. Ipsum device
+                            boolean
+                            undo plugin reesizing clip italic bold reesizing. Selection image line ellipse arrange.
+                            Select vertical
+                            selection project union layer. Variant layout prototype device
+                            bold selection content library. Link flows overflow project move pen hand frame underline
+                            export. Ipsum device
+                            boolean
+                            undo plugin reesizing clip italic bold reesizing.
+                        </p>
+                    </div>
+                    <div class="review-body">
+                        <h4 class=" review-title mb-2">
+                            ★★★★★
+                            <span class="tagline">Jalur terlandai</span>
+                        </h4>
+                        <div class="profil-container mb-1">
+                            <img src="./assets/images/kucing.jpg" alt="" alt="Foto Profil" class="profile-picture">
+                            <span class="username">Nadila</span>
+                        </div>
+                        <p class="review-text">Selection image line ellipse arrange. Select vertical selection project
+                            union layer. Variant
+                            layout prototype device
+                            bold selection content library. Link flows overflow project move pen hand frame underline
+                            export. Ipsum device
+                            boolean
+                            undo plugin reesizing clip italic bold reesizing. Selection image line ellipse arrange.
+                            Select vertical
+                            selection project union layer. Variant layout prototype device
+                            bold selection content library. Link flows overflow project move pen hand frame underline
+                            export. Ipsum device
+                            boolean
+                            undo plugin reesizing clip italic bold reesizing.
+                        </p>
+                    </div>
+                    <div class="review-body">
+                        <h4 class=" review-title mb-2">
+                            ★★★★★
+                            <span class="tagline">Jalur terlandai</span>
+                        </h4>
+                        <div class="profil-container mb-1">
+                            <img src="./assets/images/kucing.jpg" alt="" alt="Foto Profil" class="profile-picture">
+                            <span class="username">Nadila</span>
+                        </div>
+                        <p class="review-text">Selection image line ellipse arrange. Select vertical selection project
+                            union layer. Variant
+                            layout prototype device
+                            bold selection content library. Link flows overflow project move pen hand frame underline
+                            export. Ipsum device
+                            boolean
+                            undo plugin reesizing clip italic bold reesizing. Selection image line ellipse arrange.
+                            Select vertical
+                            selection project union layer. Variant layout prototype device
+                            bold selection content library. Link flows overflow project move pen hand frame underline
+                            export. Ipsum device
+                            boolean
+                            undo plugin reesizing clip italic bold reesizing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END RATING-->
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container-fluid container-footer pt-4">
+            <div class="container">
+                <a class="navbar-brand me-auto" style="margin-right: auto; margin-left: auto; margin-bottom: 10px;">
+                    PuncakPendaki
+                </a>
+                <div class="icons">
+                    <a href=" "><i class="fa-brands fa-instagram"></i></a>
+                    <a href=" "><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=" "><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=" "><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="footerNav">
+                    <p>
+                        Dapatkan informasi pendaftaran, perkiraan cuaca, syarat, dan persiapan pendakian gunung di
+                        Indonesia.
+                        Situs ini ditujukan untuk kita para pendaki. Dengan mendaftar, Anda memahami dan menyetujui jika
+                        data Anda
+                        akan dikumpulkan dan digunakan sesuai dengan kebijakan kami dan ketentuan penggunaan.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>All right reserved &copy;2024; Develop by <span class="designer">Nadila</span></p>
+        </div>
+    </footer>
+    <!-- END FOOTER-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

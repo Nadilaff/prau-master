@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,500;1,700&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --navbar-color: #128C7E;
+    --yellow-color: #FDBF60;
+    --dasar-color: #D0E8E5;
+    --button-color: #076461;
+}
+
+/* FOTO PROFIL */
+.row-profil {
+    background-color: var(--dasar-color);
+    margin-top: 15vh;
+    padding-bottom: 10vh;
+    border-radius: 30px;
+    box-shadow: 10px 10px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.profile-picture {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+#photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+#file {
+    display: none;
+}
+
+#uploadbtn {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    padding: 7px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--white-color);
+    transform: translateX(-90%);
+    margin-top: 100px;
+    background-color: var(--navbar-color);
+    box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.644);
+}
+/* END FOTO PROFIL */
+
+
+/* Form Profil */
+.form-group {
+    margin-top: 25px;
+    text-align: left;
+}
+
+.tittle-profil {
+    padding-top: 10vh;
+    padding-bottom: 1rem;
+
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: var(--black-color);
+    font-size: 20px;
+}
+
+.form-group input {
+    border: none;
+    border-bottom: 2px solid #333;
+    font-size: 14px;
+    width: 37vw;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: var(--dasar-color);
+}
+
+.form-group textarea {
+    border: none;
+    background-color: var(--dasar-color);
+    border-bottom: 2px solid #333;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+.login-btn {
+    margin-top: 10px;
+}
+
+.login-btn button {
+    background: var(--button-color);
+    width: 50%;
+    color: #fff;
+    margin-top: 30px;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 25px;
+    transform: translateX(50%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.95);
+}
+
+.login-btn button:hover {
+    background-color: var(--navbar-color);
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
+
+.cancel-button,
+.save-button {
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.95);
+}
+
+.cancel-button {
+    background-color: #b0b0b0;
+    color: #fff;
+    margin-right: 1.5rem;
+}
+
+.save-button {
+    background-color: var(--button-color);
+    color: #fff;
+}
+
+.save-button:hover {
+    background-color: var(--navbar-color);
+}
+
+.cancel-button:hover {
+    background-color: #898989;
+}
+/* End Form Profil */
